@@ -192,7 +192,7 @@ def inference_video(args, video_save_path, device=None, total_workers=1, worker_
     elif args.model_name == 'realesr-animevideov3':  # x4 VGG-style model (XS size)
         model = SRVGGNetCompact(num_in_ch=3, num_out_ch=3, num_feat=64, num_conv=16, upscale=4, act_type='prelu')
         netscale = 4
-        file_url = ['https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-animevideov3.pth']
+        file_url = ['https://github.com/Map987/Real-ESRGAN/raw/master/2x_AnimeJaNai_V2_Compact_36k.pth']
     elif args.model_name == 'realesr-general-x4v3':  # x4 VGG-style model (S size)
         model = SRVGGNetCompact(num_in_ch=3, num_out_ch=3, num_feat=64, num_conv=32, upscale=4, act_type='prelu')
         netscale = 4
